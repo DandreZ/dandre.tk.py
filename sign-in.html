@@ -15,12 +15,11 @@
     <title>没想好叫啥</title>
 </head>
 <body>
-    <form action="/signin" method="post" target="iframe_display">
+    <form action="signin" method="post" target="iframe_display">
         <input type="text" name="name">
         <input type="text" name="email">
         <input type="password" name="password">
         <input type="submit" value="提交">
     </form>
     <iframe id="iframe_display" name="iframe_display" style="display: none;"></iframe>
-    <script src="/api/signin.py"></script>
 </body>
