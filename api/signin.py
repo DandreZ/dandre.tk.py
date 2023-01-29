@@ -19,9 +19,10 @@ def gethtml():
     password=request.form['password']
     print(name,email,password)
     print('q')
-gethtml()
+
 if __name__ == '__main__':
     app.run()
+gethtml()
 AllClient=pymongo.MongoClient('mongodb+srv://root:dzr090315@dandre.g6y0ihm.mongodb.net/')
 UserDB=AllClient['user']
 UserCol=UserDB['account']
