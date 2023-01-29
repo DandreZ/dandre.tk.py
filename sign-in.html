@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link rel="stylesheet" href="/css/loading.css" />
+
+    <link rel="stylesheet" href="/css/sign-in.css" />
+
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon" />
+
+    <title>没想好叫啥</title>
+</head>
+<body>
+    <form action="/signin" method="post" target="iframe_display">
+        <input type="text" name="name">
+        <input type="text" name="email">
+        <input type="password" name="password">
+        <input type="submit" value="提交">
+    </form>
+    <iframe id="iframe_display" name="iframe_display" style="display: none;"></iframe>
+</body>

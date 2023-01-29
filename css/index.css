@@ -1,0 +1,34 @@
+.wel {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    font-size: 8vw;
+    font-family: serif;
+    font-weight: bolder;
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    line-height: 80vh;
+    text-align: center;
+    margin: 0 0;
+    color: black;
+    text-shadow: 4px 4px 10px gray;
+}
+@keyframes welcome {
+    0% {
+        top: 25vh;
+        opacity: 0;
+        font-size: 2vw;
+    }
+    55% {
+        top: -3vh;
+        opacity: 0.8;
+        font-size: 8vw;
+    }
+    100% {
+        top: 0vh;
+        opacity: 1;
+        font-size: 8vw;
+    }
+}

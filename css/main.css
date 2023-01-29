@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+    margin: 0 0;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.unli {
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+.liston {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+}
+/*侧边栏*/
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 4vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 5px rgb(100, 100, 100);
+    transition-property:width;
+	transition-duration:0.75s;
+    transition-delay: 0s;
+    z-index: 99;
+}
+
+.sidebar .module {
+    position: fixed;
+    top:30vh;
+}
+.sidebar .module .box {
+    width: 4vw;
+    height: 8vh;
+    margin: 0 0;
+    border-radius: 20px;
+    transition-property:width;
+	transition-duration:0.75s;
+    transition-delay: 0s;
+}
+.sidebar .module .box a {
+    margin: 0 0;
+    width: 4vw;
+    height: 8vh;
+}
+.sidebar .module .box a img {
+    width: 3vw;
+    height: 6vh;
+    margin: 1vh 0.5vw;
+}
+.sidebar p {
+    width: 4vw;
+    height: 8vh;
+    position: fixed;
+    left: 0;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 0.75s;
+    transition-delay: 0s;
+    font-size: 1.5vw;
+    margin: 0 0;
+    line-height: 8vh;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px gray;
+}
+/*侧边栏hover*/
+.sidebar:hover {
+    width: 8vw;
+    transition-delay: 3s;
+}
+.sidebar:hover .module .box {
+    width: 8vw;
+    transition-delay: 3s;
+}
+.sidebar:hover .module .box a {
+    width: 8vw;
+    transition-delay: 3s;
+}
+.sidebar:hover p {
+    font-size: 1.5vw;
+    opacity: 1;
+    line-height: 8vh;
+    left: 4vw;
+    transition-delay: 3s;
+}
+.sidebar .box:hover {
+    background-color: rgb(200, 200, 200,0.5);
+}
