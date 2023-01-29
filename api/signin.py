@@ -8,5 +8,6 @@ while True:
         name=request.form['name']
         password=request.form['password']
         print(name,password)
+        print('q')
     if __name__ == '__main__':
         app.run()
