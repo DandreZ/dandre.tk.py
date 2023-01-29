@@ -1,7 +1,13 @@
 from flask import Flask, request
 import pymongo
 
-
+# def test():
+#     global name
+#     global email
+#     global password
+#     name=1
+#     email=2
+#     password=3
 app = Flask(__name__)
 @app.route('/signin', methods=["POST","GET"])
 def gethtml():
@@ -13,10 +19,11 @@ def gethtml():
     password=request.form['password']
     print(name,email,password)
     print('q')
+gethtml()
 if __name__ == '__main__':
     app.run()
 AllClient=pymongo.MongoClient('mongodb+srv://root:dzr090315@dandre.g6y0ihm.mongodb.net/')
 UserDB=AllClient['user']
 UserCol=UserDB['account']
-NewAcc={"name":"%d","email":"%d","password":"%d"%(name,email,password)}
+NewAcc={"name":"%d"%(name),"email":"%d"%(email),"password":"%d"%(password)}
 UserCol.insert_one(NewAcc)
