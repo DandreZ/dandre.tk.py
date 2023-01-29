@@ -3,7 +3,7 @@ import pymongo
 
 while True:
     app = Flask(__name__)
-    @app.route('signin', methods=["POST","GET"])
+    @app.route('/signin', methods=["POST","GET"])
     def gethtml():
         name=request.form['name']
         password=request.form['password']
