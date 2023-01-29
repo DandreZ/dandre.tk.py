@@ -18,5 +18,5 @@ if __name__ == '__main__':
 AllClient=pymongo.MongoClient('mongodb+srv://root:dzr090315@dandre.g6y0ihm.mongodb.net/')
 UserDB=AllClient['user']
 UserCol=UserDB['account']
-NewAcc={"name":"%d"%name,"email":"%d"%email,"password":"%d"%password}
+NewAcc={"name":"%d","email":"%d","password":"%d"%(name,email,password)}
 UserCol.insert_one(NewAcc)
