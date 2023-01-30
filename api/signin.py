@@ -1,7 +1,7 @@
 from flask import Flask, request
 import pymongo
 app = Flask(__name__)
-@app.route('/api/', methods=["POST"])
+@app.route('/api', methods=["POST"])
 def gethtml():
     global name
     global email
@@ -11,7 +11,6 @@ def gethtml():
     password=request.form['password']
     print(name,email,password)
     print('q')
-    return "<p>Sign In Success<p>"
 if __name__ == '__main__':
     app.run()
 gethtml()
