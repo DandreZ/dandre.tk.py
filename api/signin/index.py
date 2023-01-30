@@ -16,7 +16,7 @@ while name==1:
         return "<p>sss<p>"
     if __name__ == '__main__':
         app.run()
-    gethtml()
+        gethtml()
 AllClient=pymongo.MongoClient('mongodb+srv://root:dzr090315@dandre.g6y0ihm.mongodb.net/')
 UserDB=AllClient['user']
 UserCol=UserDB['account']
