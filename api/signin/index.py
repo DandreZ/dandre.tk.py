@@ -5,14 +5,15 @@ while name==1:
     app = Flask(__name__)
     @app.route('/api/signin', methods=["POST"])
     def gethtml():
-        global name
-        global email
-        global password
-        name=request.form['name']
-        email=request.form['email']
-        password=request.form['password']
-        print(name,email,password)
-        print('q')
+        with app.app_context():
+            global name
+            global email
+            global password
+            name=request.form['name']
+            email=request.form['email']
+            password=request.form['password']
+            print(name,email,password)
+            print('q')
     if __name__ == '__main__':
         app.run()
     gethtml()
