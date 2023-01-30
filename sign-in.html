@@ -15,10 +15,11 @@
     <title>没想好叫啥</title>
 </head>
 <body>
-    <form action="/" method="post">
+    <form action="/" method="post" target="iframe_display">
         <input type="text" name="name">
         <input type="text" name="email">
         <input type="password" name="password">
         <a href="/api/signin.py"><input type="submit" value="提交"></a>
     </form>
+    <iframe id="iframe_display" name="iframe_display" style="display: none;"></iframe>
 </body>
