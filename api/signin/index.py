@@ -3,7 +3,7 @@ import pymongo
 name=1
 while name==1:
     app = Flask(__name__)
-    @app.route('/api/signin/index.py', methods=["POST"])
+    @app.route('/', methods=["POST"])
     def gethtml():
         global name
         global email
