@@ -9,7 +9,7 @@ import pymongo
 #     email=2
 #     password=3
 app = Flask(__name__)
-@app.route('/sign-in.html', methods=["POST","GET"])
+@app.route('/sign-in', methods=["POST"])
 def gethtml():
     global name
     global email
