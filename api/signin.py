@@ -1,7 +1,7 @@
 from flask import Flask, request
 import pymongo
 app = Flask(__name__)
-@app.route('/api', methods=["POST"])
+@app.route('/api/signin.py', methods=["POST"])
 def gethtml():
     global name
     global email
