@@ -14,6 +14,7 @@ while name==1:
             password=request.form['password']
             print(name,email,password)
             print('q')
+            return "<p>sss<p>"
     if __name__ == '__main__':
         app.run()
     gethtml()
